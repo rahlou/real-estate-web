@@ -2,7 +2,7 @@ version: '2.4'
 services:
   apache:
     image: rahlou/real-estate-web:latest
-    container_name: container
+    container_name: scripted-jenkins-pipeline-real-estate-web_snake_1
     ports:
     - '80:80'
     volumes:
