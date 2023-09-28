@@ -12,7 +12,7 @@ node('ubuntu-appserver-3120')
         * This is synonymous to docker build on the command line */
         app =docker.build("rahlou/real-estate-web")
     }
-    stage('Post-to -dockerhub')
+    stage('Post-to-dockerhub')
     {
         docker.withRegistry('https://registry.hub.docker.com', 'dockerhub_credentials')
         {
