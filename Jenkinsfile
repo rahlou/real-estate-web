@@ -8,7 +8,7 @@ node('ubuntu-appserver-3120')
     }
     stage('Build-and-Tag')
     {
-        /* Thisd Buils the actual image;
+        /* This Builds the actual image;
         * This is synonymous to docker build on the command line */
         app =docker.build("rahlou/real-estate-web")
     }
