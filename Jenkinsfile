@@ -14,7 +14,7 @@ node('ubuntu-appserver-3120')
     }
     stage('Post-to -dockerhub')
     {
-        docker.withRegistry('https://registry.hub.docker.com', 'dockerhub_credentials')
+        docker.withRegistry('https://registry.hub.docker.com', 'real-estate-credential')
         {
         app.push("latest")
         }
